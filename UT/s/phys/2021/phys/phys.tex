@@ -1,0 +1,58 @@
+\documentclass[a4paper,12pt]{jsarticle}
+\usepackage{qexam}
+\usepackage{amsmath, amssymb}
+\usepackage{bm}
+\usepackage{siunitx}
+\usepackage{url}
+\usepackage[dvipdfmx]{graphicx, color}
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{pxjahyper}
+\hypersetup{
+    setpagesize=false,
+    bookmarksnumbered=true,
+    bookmarksopen=true,
+    colorlinks=true,
+    anchorcolor=blue,
+    linkcolor=black,
+    citecolor=blue,
+    urlcolor=cyan,
+}
+\usepackage{tikz}
+\usetikzlibrary{decorations, decorations.pathreplacing}
+\usepackage{circuitikz}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems, skins}
+\usepackage{ascmac}
+\usepackage[numbers, sort]{natbib}
+
+\title{物理解答}
+\author{Koji Higasa}
+\date{2020年吉日}
+
+% prevent hyphenation
+\hyphenpenalty=10000\relax
+\exhyphenpenalty=10000\relax
+\sloppy
+
+\begin{document}
+\maketitle
+
+\question{問1}
+地の文~\cite{qm_sunagawa}
+\begin{qparts}
+    \qpart 宇宙が１次元の場合を考えよう。
+        \begin{qlist}
+            \qitem これを求めよ。
+            \qitem あれを求めよ。
+        \end{qlist}
+    \qpart 次に、宇宙が10次元の場合を考えよう。
+        \begin{qlist}
+            \qitem それを計算せよ。\label{q:10dim}
+            \qitem \qref{q:10dim}の解を用いてあれを証明せよ。
+        \end{qlist}
+\end{qparts}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{reference}
+
+\end{document}
